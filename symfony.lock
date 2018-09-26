@@ -245,6 +245,9 @@
     "symfony/validator": {
         "version": "v3.4.15"
     },
+    "symfony/var-dumper": {
+        "version": "v3.4.15"
+    },
     "symfony/web-server-bundle": {
         "version": "3.3",
         "recipe": {

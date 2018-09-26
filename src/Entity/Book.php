@@ -6,10 +6,18 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use ApiPlatform\Core\Annotation\ApiResource;
+use App\Controller\Api\BookController;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\BookRepository")
- * @ApiResource()
+ * @ApiResource(itemOperations={
+ *     "get",
+ *     "special"={
+ *         "method"= "GET",
+ *         "path" = "/books/{id}/special",
+ *         "controller": BookController::class
+ *     }
+ * })
  */
 class Book
 {
