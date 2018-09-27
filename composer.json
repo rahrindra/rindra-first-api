@@ -9,6 +9,7 @@
         "symfony/console": "*",
         "symfony/flex": "^1.1",
         "symfony/framework-bundle": "*",
+        "symfony/swiftmailer-bundle": "^3.2",
         "symfony/yaml": "*"
     },
     "require-dev": {
